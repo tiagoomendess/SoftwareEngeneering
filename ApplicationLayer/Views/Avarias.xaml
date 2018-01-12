@@ -1,0 +1,31 @@
+﻿<Page x:Class="ApplicationLayer.Views.Avarias"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ApplicationLayer.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="625"
+      Title="Quiosque - Avarias">
+
+    <Grid>
+        <ListBox Name="ListaAvarias" HorizontalAlignment="Left" Height="382" Margin="59,67,0,0" VerticalAlignment="Top" Width="314">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="100" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding Descricao}" Name="DataAvarias" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Click="NovaD_Button" Content="NOVA DOMESTICA" HorizontalAlignment="Left" Height="53" Margin="437,85,0,0" VerticalAlignment="Top" Width="128"/>
+        <Button Click="NovaP_Button" Content="NOVA PUBLICA" HorizontalAlignment="Left" Height="53" Margin="437,143,0,0" VerticalAlignment="Top" Width="128"/>
+        <Button Click="Resolver_Button" Content="RESOLVER" HorizontalAlignment="Left" Height="53" Margin="437,240,0,0" VerticalAlignment="Top" Width="128"/>
+
+        <Button Click="Voltar_Button" Content="VOLTAR" HorizontalAlignment="Left" Height="53" Margin="437,396,0,0" VerticalAlignment="Top" Width="128"/>
+    </Grid>
+</Page>

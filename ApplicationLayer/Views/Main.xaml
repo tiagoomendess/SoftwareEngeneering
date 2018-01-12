@@ -1,0 +1,16 @@
+﻿<Page x:Class="ApplicationLayer.Views.Main"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ApplicationLayer.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="625"
+      Title="Quiosque - Inicio">
+    <Grid Height="Auto">
+        <Button Click="Login_Button" Content="ENTRAR" HorizontalAlignment="Left" Height="53" Margin="107,194,0,0" VerticalAlignment="Top" Width="128"/>
+        <Button Click="Registar_Button" Content="PEDIR ACESSO" HorizontalAlignment="Left" Height="53" Margin="386,194,0,0" VerticalAlignment="Top" Width="128"/>
+        <Button Click="Log" Content="LOG" HorizontalAlignment="Left" Margin="266,388,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Page>

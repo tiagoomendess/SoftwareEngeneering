@@ -1,0 +1,28 @@
+﻿<Page x:Class="ApplicationLayer.Views.Leituras"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ApplicationLayer.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="625"
+      Title="Quiosque - Leituras">
+
+    <Grid>
+        <ListBox Name="ListaLeituras" HorizontalAlignment="Left" Height="384" Margin="59,67,0,0" VerticalAlignment="Top" Width="314">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="100" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding Data}" Name="DataLeituras" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Click="Nova" Content="NOVA" HorizontalAlignment="Left" Height="53" Margin="437,85,0,0" VerticalAlignment="Top" Width="128"/>
+        <Button Click="Voltar" Content="VOLTAR" HorizontalAlignment="Left" Height="53" Margin="437,398,0,0" VerticalAlignment="Top" Width="128"/>
+    </Grid>
+</Page>

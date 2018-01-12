@@ -1,0 +1,27 @@
+﻿<Page x:Class="ApplicationLayer.Views.Registar_Dados"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ApplicationLayer.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="625"
+      Title="Quiosque - Pedido de Registo">
+
+    <Grid>
+        <Label Content="REGISTO" HorizontalAlignment="Left" Margin="284,70,0,0" VerticalAlignment="Top"/>
+        <Label Content="DEFINIR PASSWORD" HorizontalAlignment="Left" Margin="94,134,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.461,-1.281"/>
+        <TextBlock HorizontalAlignment="Left" Margin="94,176,0,0" TextWrapping="Wrap" Text="CODIGO" VerticalAlignment="Top"/>
+        <TextBox Name="codigo" HorizontalAlignment="Left" Height="23" Margin="94,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="94,242,0,0" TextWrapping="Wrap" Text="PASSWORD" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="94,315,0,0" TextWrapping="Wrap" Text="REPITA PASSWORD" VerticalAlignment="Top" RenderTransformOrigin="-4.696,-3.175"/>
+        <Label Content="LOGIN REDE SOCIAL" HorizontalAlignment="Left" Margin="420,134,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.518,0.516"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="420,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="420,176,0,0" TextWrapping="Wrap" Text="CODIGO" VerticalAlignment="Top" RenderTransformOrigin="-0.376,0.551"/>
+        <Button Click="Facebook" Content="FACEBOOK" HorizontalAlignment="Left" Margin="420,248,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Click="Registar" Content="REGISTAR" HorizontalAlignment="Left" Margin="94,389,0,0" VerticalAlignment="Top" Width="75"/>
+        <PasswordBox Name="pass1" HorizontalAlignment="Left" Height="23" Margin="94,263,0,0" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox Name="pass2" HorizontalAlignment="Left" Height="23" Margin="94,336,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Page>

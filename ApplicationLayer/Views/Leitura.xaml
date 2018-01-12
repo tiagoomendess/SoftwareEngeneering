@@ -1,0 +1,31 @@
+﻿<Page x:Class="ApplicationLayer.Views.Leitura"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ApplicationLayer.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="625"
+      Title="Quiosque - Leitura">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="CONTRATO" VerticalAlignment="Top" Margin="242,178,0,0" RenderTransformOrigin="3.06,2.96"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="LEITURA" VerticalAlignment="Top" Margin="242,226,0,0" RenderTransformOrigin="0.621,3.479"/>
+        <TextBox Name="valor" HorizontalAlignment="Left" Height="23" Margin="242,247,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="128"/>
+
+        <Button Click="Gravar_Button" Content="REGISTAR" HorizontalAlignment="Left" Height="53" Margin="241,295,0,0" VerticalAlignment="Top" Width="128"/>
+        <ComboBox Name ="ListaContratos" HorizontalAlignment="Left" SelectionChanged="ListaContratos_SelectionChanged" Margin="241,199,0,0" VerticalAlignment="Top" Width="128" RenderTransformOrigin="-0.747,0.045" Text="Contratos Registados">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Fill="{Binding Codigo}" Width="16" Height="16" Margin="0,2,5,2" />
+                        <TextBlock Text="{Binding Codigo}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+    </Grid>
+</Page>
+

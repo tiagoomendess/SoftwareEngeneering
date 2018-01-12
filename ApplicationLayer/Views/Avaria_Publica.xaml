@@ -1,0 +1,41 @@
+﻿<Page x:Class="ApplicationLayer.Views.Avaria_Publica"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ApplicationLayer.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="625"
+      Title="Quiosque - Avaria Publica">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TIPO DE AVARIA" VerticalAlignment="Top" Margin="90,158,0,0"/>
+        <ComboBox Name ="ListaTipos" HorizontalAlignment="Left" SelectionChanged="ListaContratos_SelectionChanged" Margin="92,178,0,0" VerticalAlignment="Top" Width="128" RenderTransformOrigin="-0.747,0.045" Text="Contratos Registados">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Fill="{Binding Denominacao}" Width="16" Height="16" Margin="0,2,5,2" />
+                        <TextBlock Text="{Binding Denominacao}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="DESCRIÇÃO" VerticalAlignment="Top" Margin="90,234,0,0"/>
+        <TextBox Name="descricao" HorizontalAlignment="Left" Height="79" Margin="90,255,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="LOCAL" VerticalAlignment="Top" Margin="92,353,0,0"/>
+
+        <Button Content="IMAGEM" HorizontalAlignment="Left" Height="53" Margin="374,255,0,0" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.421,-3.589"/>
+
+        <Button Click="Registar_button" Content="REGISTAR" HorizontalAlignment="Left" Height="53" Margin="406,423,0,0" VerticalAlignment="Top" Width="128"/>
+        <TextBlock Text="AVARIA PÚBLICA" HorizontalAlignment="Center" Margin="239,50,254.8,0" VerticalAlignment="Top" Height="30" Width="131">
+            <TextBlock.RenderTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBox Name="localDes" HorizontalAlignment="Left" Height="64" Margin="92,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164"/>
+
+    </Grid>
+</Page>
+

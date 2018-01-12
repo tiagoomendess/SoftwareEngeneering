@@ -1,0 +1,31 @@
+﻿<Page x:Class="ApplicationLayer.Views.Avaria_Domestica"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ApplicationLayer.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="625"
+      Title="Quiosque - Avaria Doméstica">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TIPO DE AVARIA" VerticalAlignment="Top" Margin="90,158,0,0"/>
+        <ComboBox HorizontalAlignment="Left" Margin="90,179,0,0" VerticalAlignment="Top" Width="128" RenderTransformOrigin="-0.747,0.045"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="DESCRIÇÃO" VerticalAlignment="Top" Margin="90,234,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="79" Margin="90,255,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="CONTRATO" VerticalAlignment="Top" Margin="92,353,0,0"/>
+        <ComboBox HorizontalAlignment="Left" Margin="92,374,0,0" VerticalAlignment="Top" Width="128" RenderTransformOrigin="-0.747,0.045"/>
+
+        <Button Content="IMAGEM" HorizontalAlignment="Left" Height="53" Margin="374,255,0,0" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.421,-3.589"/>
+
+        <Button Content="REGISTAR" HorizontalAlignment="Left" Height="53" Margin="406,441,0,0" VerticalAlignment="Top" Width="128"/>
+        <TextBlock Text="AVARIA DOMÉSTICA" HorizontalAlignment="Center" Margin="239,50,254.8,0" VerticalAlignment="Top" Height="30" Width="131">
+            <TextBlock.RenderTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </TextBlock.RenderTransform>
+        </TextBlock>
+
+    </Grid>
+</Page>
